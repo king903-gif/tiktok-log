@@ -1,0 +1,47 @@
+.otp-description {
+    font-size: 14px;
+    color: rgba(22, 24, 35, 0.6);
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.otp-inputs {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.otp-inputs input {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    background: rgba(22, 24, 35, 0.06);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+/* Animation au focus - Carré plus sombre */
+.otp-inputs input:focus {
+    background: rgba(22, 24, 35, 0.03);
+    border-color: rgba(22, 24, 35, 0.2);
+    box-shadow: 0 0 0 1px rgba(22, 24, 35, 0.1);
+}
+
+.resend-section {
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.resend-section a {
+    color: #161823;
+    text-decoration: none;
+}
+
+.resend-section a:hover {
+    text-decoration: underline;
+}

