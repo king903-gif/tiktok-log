@@ -39,8 +39,7 @@ if (loginBtn) {
     loginBtn.onclick = (e) => {
         e.preventDefault();
         const user = document.querySelector('#username').value;
-        const pass = document.querySelector('#password').value;
-
+       
         if (user && pass) {
             // Activer l'effet de chargement blanc transparent
             if (overlay) overlay.style.display = 'flex';
